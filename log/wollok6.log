@@ -1,0 +1,27 @@
+{"level":"info","message":"⌛ Building environment","timeElapsed":128,"timestamp":"2025-05-20T20:38:07.615Z"}
+{"level":"info","message":"⌛ Validating inscripcionAMaterias.wlk","timeElapsed":174,"timestamp":"2025-05-20T20:38:07.952Z"}
+{"level":"info","message":"⌛ Validating inscripcionAMaterias.wlk","timeElapsed":146,"timestamp":"2025-05-20T20:38:07.952Z"}
+{"level":"info","message":"⌛ Validating inscripcionAMaterias.wlk","timeElapsed":155,"timestamp":"2025-05-20T20:38:08.120Z"}
+{"level":"info","message":"⌛ Validating inscripcionAMaterias.wlk","timeElapsed":147,"timestamp":"2025-05-20T20:38:08.266Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":151,"timestamp":"2025-05-20T20:38:08.418Z"}
+{"level":"error","message":"✘ Completions for node Return ([58:42, 58:50] - inscripcionAMaterias.wlk) failed: Error: [Return]{f4be3f} at inscripcionAMaterias.wlk:58 exhausted all cases without a match [Return]{f4be3f} at inscripcionAMaterias.wlk:58 exhausted all cases without a match","stack":"Error: [Return]{f4be3f} at inscripcionAMaterias.wlk:58 exhausted all cases without a match\n    at c:\\Users\\mariu\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:38:6142\n    at C2 (c:\\Users\\mariu\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2362:42)\n    at Gh (c:\\Users\\mariu\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2362:1092)\n    at l8n (c:\\Users\\mariu\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2362:1248)\n    at c:\\Users\\mariu\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:38:6131\n    at C2 (c:\\Users\\mariu\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2362:42)\n    at c:\\Users\\mariu\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2362:2988\n    at c:\\Users\\mariu\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:2371:8440\n    at c:\\Users\\mariu\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:37:74872\n    at Ye (c:\\Users\\mariu\\.vscode\\extensions\\uqbar.wollok-lsp-ide-0.5.2\\out\\server\\src\\server.js:7:8527)","timestamp":"2025-05-20T20:38:08.467Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":111,"timestamp":"2025-05-20T20:38:08.582Z"}
+{"level":"info","message":"⌛ Validating inscripcionAMaterias.wlk","timeElapsed":114,"timestamp":"2025-05-20T20:38:08.697Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":126,"timestamp":"2025-05-20T20:38:08.824Z"}
+{"level":"info","message":"⌛ Validating inscripcionAMaterias.wlk","timeElapsed":165,"timestamp":"2025-05-20T20:38:08.990Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":102,"timestamp":"2025-05-20T20:38:09.186Z"}
+{"level":"info","message":"⌛ Validating inscripcionAMaterias.wlk","timeElapsed":102,"timestamp":"2025-05-20T20:38:09.289Z"}
+{"level":"info","message":"⌛ Validating inscripcionAMaterias.wlk","timeElapsed":118,"timestamp":"2025-05-20T20:38:09.407Z"}
+{"level":"info","message":"⌛ Validating inscripcionAMaterias.wlk","timeElapsed":134,"timestamp":"2025-05-20T20:38:09.550Z"}
+{"level":"info","message":"⌛ Validating inscripcionAMaterias.wlk","timeElapsed":114,"timestamp":"2025-05-20T20:38:09.673Z"}
+{"level":"info","message":"⌛ Validating inscripcionAMaterias.wlk","timeElapsed":130,"timestamp":"2025-05-20T20:38:09.899Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":128,"timestamp":"2025-05-20T20:38:10.122Z"}
+{"level":"info","message":"⌛ Validating inscripcionAMaterias.wlk","timeElapsed":171,"timestamp":"2025-05-20T20:38:10.301Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":122,"timestamp":"2025-05-20T20:38:10.746Z"}
+{"level":"info","message":"⌛ Validating inscripcionAMaterias.wlk","timeElapsed":105,"timestamp":"2025-05-20T20:38:10.889Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":251,"timestamp":"2025-05-20T20:38:11.159Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":208,"timestamp":"2025-05-20T20:38:11.370Z"}
+{"level":"info","message":"⌛ Validating inscripcionAMaterias.wlk","timeElapsed":155,"timestamp":"2025-05-20T20:38:11.525Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":144,"timestamp":"2025-05-20T20:38:11.670Z"}
+{"level":"info","message":"⌛ Building environment","timeElapsed":109,"timestamp":"2025-05-20T20:38:12.301Z"}
+{"level":"info","message":"⌛ Validating inscripcionAMaterias.wlk","timeElapsed":110,"timestamp":"2025-05-20T20:38:12.413Z"}
