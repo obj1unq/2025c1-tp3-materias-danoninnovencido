@@ -19,7 +19,7 @@ class Materia {
   const materiaPrerequisito = []
   const cupo = 0
   const listaDeEspera = []
-  const inscriptos = [] //Estudiantes 
+  const property inscriptos = [] //Estudiantes 
 
   method cuposDeLaMateria() {return cupo}
 
@@ -40,7 +40,7 @@ class Materia {
   }
 
   method estaInscripto(estudiante) {
-    return inscriptos.includes(estudiante)
+    return inscriptos.contains(estudiante)
   }
 
   method tieneRequisitos(estudiante) {
@@ -94,6 +94,7 @@ class Estudiante {
 
   method cursaLaMateria(materia) {return carrerasInscripto.any({carrera => carrera.tieneLaMateria(materia)})}
   
+  method materiasEnCurso(){return }
 
 
 
