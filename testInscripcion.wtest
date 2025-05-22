@@ -1,0 +1,93 @@
+import inscripcionAMaterias.*
+
+describe "Roque aprueba Poo1 " {
+  
+  const epyl = new Materia(nombreDeLaMateria = "Elem. De logica y Prog",materiaPrerequisito = [],cupo = 1,inscriptos = [],listaDeEspera = [])
+
+  const poo1 = new Materia(nombreDeLaMateria = "Objetos1",materiaPrerequisito = [epyl],cupo = 2,inscriptos = [],listaDeEspera = [])
+
+  const prog = new Carrera(nombreDeLaCarrera = "Programacion",materiasDeLaCarrera = [epyl, poo1])
+
+  const roque = new Estudiante(carrerasInscripto = [prog],materiasAprobadas = [])
+
+    test "Registro de materia aprobada, indicando nota obtenida"{
+     
+      
+      roque.registrarMateriaAprobada(poo1,8)
+      assert.equals([poo1],roque.materiasAprobadas())
+
+  }
+}
+
+describe "Roque está incripto a Medicina y en Programacion" {
+    
+    const med = new Carrera( nombreDeLaCarrera = "Medicina",materiasDeLaCarrera = []) 
+    const prog = new Carrera(nombreDeLaCarrera = "Programacion",materiasDeLaCarrera = [])
+    const roque = new Estudiante(carrerasInscripto = [prog,med],materiasAprobadas = [])
+
+  test "Coleccion de TODAS las carreras inscripto del Estudiante" {
+    
+    assert.equals([prog,med], roque.carrerasInscripto())
+  }
+}
+
+describe "Roque se inscribe a una materia PERO con requisitos"{
+  test "El estudiante se puede inscribir a una materia segun los criterios" {
+
+    //ESTE TEST FALLA DEBIDO A QUE esMateriaAprobada trabaja con instancias de la Clase Aprobacion y no con instancias de clase Materia 
+    //Como estoy trabajando, el tema es que no se me ocurre idea de arreglarlo.
+
+    const epyl = new Materia(nombreDeLaMateria = "Elem. De logica y Prog",materiaPrerequisito = [],cupo = 1,inscriptos = [],listaDeEspera = [])
+
+    const poo1 = new Materia(nombreDeLaMateria = "Objetos1",materiaPrerequisito = [epyl],cupo = 2,inscriptos = [],listaDeEspera = [])
+
+    const prog = new Carrera(nombreDeLaCarrera = "Programacion",materiasDeLaCarrera = [epyl, poo1])
+
+    const roque = new Estudiante(carrerasInscripto = [prog],materiasAprobadas = [epyl])
+
+    poo1.inscribirEstudiante(roque)
+
+    assert.equals([roque], poo1.inscriptos())
+  }
+
+}
+
+describe "Roque se da de baja de Mate2" {
+  test "Dar de baja a un estudiante de una materia" {
+    
+    
+    const roque = new Estudiante(carrerasInscripto = [],materiasAprobadas = [])
+
+    const poo1 = new Materia(nombreDeLaMateria = "Objetos1",materiaPrerequisito = [],cupo = 2,inscriptos = [roque],listaDeEspera = [])
+
+    const prog = new Carrera(nombreDeLaCarrera = "Programacion",materiasDeLaCarrera = [poo1])
+
+    roque.carrerasInscripto().add(prog)
+    poo1.bajaDeEstudiante(roque)
+    assert.equals([], poo1.inscriptos())
+  }
+}
+
+describe "Resultados de inscripcion"{
+
+  test "Se pueden ver los inscriptos a una materia dada" {
+    const epyl = new Materia(nombreDeLaMateria = "Elem. De logica y Prog",materiaPrerequisito = [],cupo = 1,inscriptos = [],listaDeEspera = [])
+
+    const poo1 = new Materia(nombreDeLaMateria = "Objetos1",materiaPrerequisito = [epyl],cupo = 2,inscriptos = [],listaDeEspera = [])
+
+    const prog = new Carrera(nombreDeLaCarrera = "Programacion",materiasDeLaCarrera = [epyl, poo1])
+
+    const roque = new Estudiante(carrerasInscripto = [prog],materiasAprobadas = [])
+
+    epyl.inscribirEstudiante(roque)
+    poo1.inscribirEstudiante(roque)
+    assert.equals([roque], epyl.inscriptos())
+    assert.equals([roque], poo1.listaDeEspera())  //No termina de cumplir los requisitos para inscribirse  
+  }
+}
+
+describe "Informacion util para el estudiante" {
+  test "Materias en la que está el estudiante" {
+    
+  }
+}
